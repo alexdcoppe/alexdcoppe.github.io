@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="花都开锁公司提供24小时专业开锁换锁、汽车开锁、指纹锁安装及防盗门维修服务。正规持证，安全快速，紧急救援。">
+    <meta name="keywords" content="花都开锁公司,开锁换锁,汽车开锁,指纹锁,防盗门维修,24小时开锁">
+    <title>花都开锁公司-24小时专业开锁换锁与防盗门维修服务</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --primary-hover: #b71c1c;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: var(--radius);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .section-title p {
+            color: var(--text-gray);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .contact-item small {
+            font-size: 0.75rem;
+            color: var(--text-gray);
+        }
+
+        .contact-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/locksmith/1920/600.jpg') center/cover no-repeat;
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        /* Service Cards */
+        .services {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+
+        /* Trust & Safety */
+        .trust-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .trust-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .trust-content p {
+            margin-bottom: 20px;
+            color: var(--text-gray);
+        }
+
+        .trust-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .check-icon {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .trust-image img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-gray);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                padding: 0 10px;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                padding: 20px;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .header-contact {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span>🔒</span> 花都开锁公司
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#services">服务项目</a></li>
+                    <li><a href="#trust">公司资质</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <small>服务热线</small>
+                    <strong>138-0000-0000</strong>
+                </div>
+                <a href="tel:13800000000" class="btn btn-primary">立即呼叫</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>专业解决开锁换锁难题</h1>
+            <p>花都开锁公司提供24小时紧急开锁服务，持证上岗，技术精湛，安全快速。</p>
+            <div style="margin-bottom: 30px;">
+                <a href="tel:13800000000" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 40px;">立即拨打电话</a>
+                <a href="#services" class="btn btn-outline" style="color: white; border-color: white; margin-left: 10px;">了解服务</a>
+            </div>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <span>30分钟极速上门</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <span>明码标价无隐形消费</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <span>正规开锁 安全可靠</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>服务项目</h2>
+                <p>提供全方位的锁具解决方案，覆盖日常生活及商业场景</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">🚪</span>
+                    <h3>家庭防盗门开锁</h3>
+                    <p>专业处理家庭防盗门、木门、铁门锁芯故障，不破坏门体结构，快速恢复使用。</p>
+                    <a href="#contact" class="btn btn-outline">咨询报价</a>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🚗</span>
+                    <h3>汽车开锁服务</h3>
+                    <p>针对汽车中控锁失灵、钥匙丢失、锁芯损坏等情况，提供无损开锁及钥匙匹配服务。</p>
+                    <a href="#contact" class="btn btn-outline">咨询报价</a>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🔑</span>
+                    <h3>指纹锁安装与维修</h3>
+                    <p>提供指纹锁、密码锁、人脸识别锁的安装调试、密码重置及故障维修服务。</p>
+                    <a href="#contact" class="btn btn-outline">咨询报价</a>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏢</span>
+                    <h3>办公室/店铺开锁</h3>
+                    <p>为企事业单位、商铺提供安全快捷的开锁服务，保障营业时间不受影响。</p>
+                    <a href="#contact" class="btn btn-outline">咨询报价</a>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛡️</span>
+                    <h3>防盗门换锁芯</h3>
+                    <p>老旧锁芯升级，更换C级超B级锁芯，提升家庭及商业场所的安全等级。</p>
+                    <a href="#contact" class="btn btn-outline">咨询报价</a>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">⚙️</span>
+                    <h3>锁具维修与保养</h3>
+                    <p>针对各类机械锁、电子锁的故障进行检测、维修及日常保养，延长锁具寿命。</p>
+                    <a href="#contact" class="btn btn-outline">咨询报价</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-section" id="trust">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-content">
+                    <h2>正规资质 · 持证上岗</h2>
+                    <p>我们是一家经过公安部门备案的专业开锁公司，所有技术人员均持有公安机关核发的《特种行业许可证》及《职业资格证》。</p>
+                    <p>在提供服务前，我们会严格核对客户身份信息，确保安全。我们承诺所有服务明码标价，无任何隐形消费，让客户安心、放心。</p>
+                    <ul class="trust-list">
+                        <li><span class="check-icon">✓</span> 公安局备案正规开锁公司</li>
+                        <li><span class="check-icon">✓</span> 24小时全天候待命服务</li>
+                        <li><span class="check-icon">✓</span> 技术精湛，不损坏门锁</li>
+                        <li><span class="check-icon">✓</span> 专业保险，服务有保障</li>
+                    </ul>
+                </div>
+                <div class="trust-image">
+                    <img src="https://picsum.photos/seed/locksmith_work/600/400.jpg" alt="专业开锁技术人员工作场景">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>常见问题</h2>
+                <p>关于开锁服务，您可能关心的问题解答</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">开锁需要提供什么证件？ <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>为了保障您的财产安全，我们严格执行公安部门的规定。在上门开锁前，请务必出示您的身份证件以及能证明您是房主或该场所使用者的有效证件（如房产证、租房合同、单位工作证等）。如果无法提供证件，我们将拒绝提供服务。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">开锁收费是如何计算的？ <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>我们的收费标准严格按照当地物价局规定及公司标准执行。一般家庭防盗门开锁费在XX元起，汽车开锁根据车型和难度有所不同。所有费用在服务前会向您明确告知，维修或更换锁芯的费用也会在报价单上列出，无隐形消费。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">服务时间是什么时候？ <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>我们提供24小时全天候服务，包括节假日、深夜及凌晨。无论您何时遇到锁具问题，都可以随时拨打我们的服务热线，我们会安排最近的开锁师傅在30分钟内到达现场。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">如果开锁过程中损坏了门锁怎么办？ <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>我们的技术人员都经过严格培训，技术娴熟，绝大多数情况下都能无损开锁。但若因特殊情况导致锁具损坏，我们会负责免费维修或更换同档次的新锁芯，绝不让客户承担额外损失。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>花都开锁公司</h4>
+                    <p style="margin-bottom: 15px; font-size: 0.9rem;">专业、快速、安全、诚信。致力于为花都地区居民和企业提供高品质的锁具服务。</p>
+                    <p><strong>服务热线：</strong> 138-0000-0000</p>
+                    <p><strong>服务时间：</strong> 24小时全天候</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#home">返回首页</a></li>
+                        <li><a href="#services">服务项目</a></li>
+                        <li><a href="#trust">公司资质</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>服务范围</h4>
+                    <ul>
+                        <li><a href="#">花都城区开锁</a></li>
+                        <li><a href="#">汽车开锁服务</a></li>
+                        <li><a href="#">指纹锁安装</a></li>
+                        <li><a href="#">防盗门维修</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 花都开锁公司 版权所有. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                faq.classList.remove('active');
+            });
+
+            // Toggle clicked item
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    document.getElementById('main-nav').classList.remove('active');
+                    
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
