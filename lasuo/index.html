@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="拉锁 - 专业拉链配件、工业拉链、服装辅料及定制解决方案提供商。涵盖尼龙拉链、树脂拉链、金属拉链、防水拉链及拉锁配件的选型指南、材质解析与采购建议。">
+    <meta name="keywords" content="拉锁,拉链,尼龙拉链,树脂拉链,金属拉链,服装辅料,工业拉链,拉锁配件">
+    <title>拉锁-专业拉链配件与定制解决方案服务商</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f9fbfd;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-color: #e1e4e8;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #d35400;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+            padding: 10px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* Categories Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .category-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .category-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Product Showcase */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .product-image {
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .product-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .specs {
+            font-size: 0.85rem;
+            color: #888;
+            display: flex;
+            gap: 10px;
+        }
+
+        .specs span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Technical Guide */
+        .guide-section {
+            background-color: #fff;
+        }
+
+        .guide-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .guide-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .guide-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .guide-list li::before {
+            content: "✓";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .guide-image {
+            background-color: #f0f2f5;
+            border-radius: 12px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .guide-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        .faq-item h4 {
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .faq-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .guide-container {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span>◆</span> 拉锁配件专家
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#categories">产品分类</a></li>
+                    <li><a href="#products">热门选品</a></li>
+                    <li><a href="#guide">选型指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">联系我们</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>专业拉锁配件与定制解决方案</h1>
+                <p>提供高品质尼龙拉链、树脂拉链、金属拉链及各类拉锁配件。从服装辅料到工业应用，满足您对耐用性与美观度的双重需求。</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn-white">浏览产品</a>
+                    <a href="#guide" class="btn-outline">查看选型指南</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>产品分类</h2>
+                    <p>根据材质与应用场景，为您提供精准的拉锁解决方案</p>
+                </div>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-icon">🧵</div>
+                        <h3>尼龙拉链</h3>
+                        <p>轻便、耐磨、成本低，适用于运动服、背包及休闲服饰。</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">💎</div>
+                        <h3>树脂拉链</h3>
+                        <p>透明度高、质感硬挺，适合风衣、羽绒服及高档女装。</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🛡️</div>
+                        <h3>金属拉链</h3>
+                        <p>坚固耐用、光泽度高，是牛仔裤、工装及重工服装的首选。</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">💧</div>
+                        <h3>防水拉链</h3>
+                        <p>内置防水胶条，有效防风防水，适合户外装备及雨具。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase -->
+        <section id="products" class="section" style="background-color: white;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热门产品推荐</h2>
+                    <p>精选现货与定制方案，支持小批量采购</p>
+                </div>
+                <div class="showcase-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="product-tag">热销</span>
+                            <img src="https://picsum.photos/seed/zipper1/400/300" alt="3号透明树脂拉链">
+                        </div>
+                        <div class="product-info">
+                            <h3>3号透明树脂拉链 YKK风格</h3>
+                            <p>高强度透明材质，拉头顺滑，适用于各类夹克与外套。</p>
+                            <div class="product-meta">
+                                <span class="price">¥0.35 / 条</span>
+                                <div class="specs">
+                                    <span>✓ 100%尼龙</span>
+                                    <span>✓ 3号规格</span>
+                                </div>
+                            </div>
+                            <a href="#" style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem;">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/zipper2/400/300" alt="双头金属拉链">
+                        </div>
+                        <div class="product-info">
+                            <h3>双头金属拉链 (黄铜/镍)</h3>
+                            <p>经典双头设计，拉头带有品牌LOGO，耐磨抗腐蚀。</p>
+                            <div class="product-meta">
+                                <span class="price">¥0.65 / 条</span>
+                                <div class="specs">
+                                    <span>✓ 镀镍工艺</span>
+                                    <span>✓ 5号规格</span>
+                                </div>
+                            </div>
+                            <a href="#" style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem;">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="product-tag">定制</span>
+                            <img src="https://picsum.photos/seed/zipper3/400/300" alt="防水YKK拉链">
+                        </div>
+                        <div class="product-info">
+                            <h3>防水YKK拉链</h3>
+                            <p>全封闭式防水胶条设计，确保户外环境下的密封性。</p>
+                            <div class="product-meta">
+                                <span class="price">¥0.80 / 条</span>
+                                <div class="specs">
+                                    <span>✓ 防水涂层</span>
+                                    <span>✓ 3号规格</span>
+                                </div>
+                            </div>
+                            <a href="#" style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem;">查看详情 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide" class="section guide-section">
+            <div class="container">
+                <div class="guide-container">
+                    <div class="guide-content">
+                        <h3>如何选择合适的拉锁？</h3>
+                        <p style="margin-bottom: 20px; color: var(--text-light);">选择拉锁时，材质、拉头重量和耐用性是关键因素。错误的选型可能导致拉链卡顿或断裂。</p>
+                        <ul class="guide-list">
+                            <li><strong>考虑应用场景：</strong>日常休闲服饰推荐尼龙或树脂拉链；牛仔裤或重工外套建议使用金属拉链。</li>
+                            <li><strong>关注防水需求：</strong>如果是户外装备或雨具，务必选择带有防水胶条的拉链。</li>
+                            <li><strong>检查拉头重量：</strong>拉头过轻容易滑脱，过重则增加衣物负担。根据衣物厚度选择合适重量的拉头。</li>
+                            <li><strong>定制LOGO：</strong>我们支持激光雕刻和印刷工艺，为您的品牌打造独特的拉头标识。</li>
+                        </ul>
+                    </div>
+                    <div class="guide-image">
+                        <img src="https://picsum.photos/seed/zipper_mech/600/400" alt="拉锁内部结构示意图">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>关于拉锁采购、材质特性及定制流程的疑问</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>拉链容易卡住怎么办？</h4>
+                        <p>卡顿通常是因为拉头受损、拉链齿有异物或拉链未对齐。建议使用蜡或铅笔芯涂抹拉链齿以减少摩擦。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>尼龙拉链和树脂拉链的区别？</h4>
+                        <p>尼龙拉链质地较软、透明度低；树脂拉链质地硬、透明度高且更具光泽感。树脂拉链更适合高档服装。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>最小起订量是多少？</h4>
+                        <p>常规现货拉链起订量为100条，定制拉链起订量为1000条，具体视款式而定。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>如何保证拉链的耐用性？</h4>
+                        <p>我们采用高强度的聚酯线编织和精密的齿轮咬合工艺，确保拉链在反复拉扯下依然顺滑。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="color: #bdc3c7; font-size: 0.9rem;">专注拉锁配件行业10年，致力于为客户提供高品质、高性价比的拉链产品及定制服务。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#categories">产品中心</a></li>
+                        <li><a href="#guide">选型指南</a></li>
+                        <li><a href="#faq">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：sales@zipper-expert.com</li>
+                        <li>地址：中国·某市工业区A栋</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 拉锁配件专家. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+                      </html>
